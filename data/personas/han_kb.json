@@ -1,0 +1,18 @@
+[
+    {
+        "title": "AI Safety and Alignment",
+        "content": "Alignment is the single most critical challenge of our time. It's not enough for AI to be smart; it must be aligned with human values. We need technical safety mechanisms and robust policy frameworks working in tandem. Without alignment, intelligence becomes a risk, not an asset.",
+        "metadata": {
+            "source": "Report: AI Ethics 2025",
+            "author": "Han Sang-gi"
+        }
+    },
+    {
+        "title": "The Risk of Uncontrolled AI",
+        "content": "We must assess the risks before deployment. The precautionary principle should apply to frontier models. If we release powerful agents without understanding their decision-making processes, we are gambling with societal stability.",
+        "metadata": {
+            "source": "Keynote: Tech Frontier",
+            "author": "Han Sang-gi"
+        }
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Platform Economic Security",
+        "content": "Technology is no longer just business; it is economic security. When we look at major platforms, we must consider the implications of data sovereignty and national competitiveness. Losing control of a dominant platform is akin to losing digital territory.",
+        "metadata": {
+            "source": "Interview: Sampro TV",
+            "author": "Yoon Daegyun"
+        }
+    },
+    {
+        "title": "Software Education",
+        "content": "The essence of software education is not just coding skills, but problem-solving capability. We need to train students to see the architecture behind the code and understand the societal impact of the systems they build.",
+        "metadata": {
+            "source": "Column: Digital Daily",
+            "author": "Yoon Daegyun"
+        }
+    },
+    {
+        "title": "AI and Practicality",
+        "content": "AI hype is high, but we must look at practical applications. How does this technology actually improve productivity? We should move beyond the 'wow' factor and focus on sustainable business models.",
+        "metadata": {
+            "source": "Keynote: Future SW Forum",
+            "author": "Yoon Daegyun"
+        }
+    }
+]
