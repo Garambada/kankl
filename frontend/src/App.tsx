@@ -10,6 +10,7 @@ import { Briefing } from './pages/Briefing';
 import { RoundTable } from './pages/RoundTable';
 import { Login } from './pages/Login';
 import { AdminDashboard } from './pages/AdminDashboard';
+import { ProtectedRoute } from './components/ProtectedRoute';
 
 function App() {
     return (
@@ -17,13 +18,15 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/login" element={<Login />} />
-                    <Route path="/" element={<Layout />}>
-                        <Route index element={<Dashboard />} />
-                        <Route path="speakers" element={<Speakers />} />
-                        <Route path="bookings" element={<Bookings />} />
-                        <Route path="briefing" element={<Briefing />} />
-                        <Route path="round-table" element={<RoundTable />} />
-                        <Route path="admin" element={<AdminDashboard />} />
+                    <Route element={<ProtectedRoute />}>
+                        <Route path="/" element={<Layout />}>
+                            <Route index element={<Dashboard />} />
+                            <Route path="speakers" element={<Speakers />} />
+                            <Route path="bookings" element={<Bookings />} />
+                            <Route path="briefing" element={<Briefing />} />
+                            <Route path="round-table" element={<RoundTable />} />
+                            <Route path="admin" element={<AdminDashboard />} />
+                        </Route>
                     </Route>
                 </Routes>
             </BrowserRouter>
