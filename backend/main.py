@@ -20,7 +20,10 @@ app = FastAPI(
 # CORS Config
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://kankl-boardroom-club-1771850475.netlify.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
