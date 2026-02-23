@@ -15,6 +15,12 @@ from backend.database import models
 # Create Tables
 Base.metadata.create_all(bind=engine)
 
+app = FastAPI(
+    title="Boardroom Club API",
+    version="1.0.0",
+    description="AI-Native Speaker Management API"
+)
+
 @app.on_event("startup")
 def startup_db_seed():
     from backend.database.session import SessionLocal
@@ -31,12 +37,6 @@ def startup_db_seed():
         print(f"Error seeding DB: {e}")
     finally:
         db.close()
-
-app = FastAPI(
-    title="Boardroom Club API",
-    version="1.0.0",
-    description="AI-Native Speaker Management API"
-)
 
 # CORS Config
 app.add_middleware(
