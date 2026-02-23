@@ -38,8 +38,8 @@ export const Bookings: React.FC = () => {
         <div className="min-h-screen pb-12">
             <div className="flex justify-between items-end mb-8 relative z-10">
                 <div>
-                    <h1 className="text-3xl font-bold text-slate-900 mb-2">My Bookings</h1>
-                    <p className="text-slate-500 text-lg">Manage your upcoming advisory sessions.</p>
+                    <h1 className="text-3xl font-bold text-slate-900 mb-2">Bookings</h1>
+                    <p className="text-slate-500 text-lg">Manage and view all global advisory sessions.</p>
                 </div>
                 <div className="flex gap-4">
                     <div className="bg-slate-100 p-1 rounded-xl flex">

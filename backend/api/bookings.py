@@ -54,7 +54,8 @@ def create_booking(booking: BookingCreate, db: Session = Depends(get_db), curren
 
 @router.get("/", response_model=List[BookingResponse])
 def list_bookings(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
-    bookings = db.query(Booking).filter(Booking.user_id == current_user.id).all()
+    # Share all bookings globally across users as requested
+    bookings = db.query(Booking).all()
     
     response = []
     for b in bookings:
