@@ -6,7 +6,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Use environment variable or fallback to SQLite for local pilot stability
-db_path = os.path.expanduser("~/.boardroomclub_data/boardroomclub.db")
+db_dir = os.path.expanduser("~/.boardroomclub_data")
+os.makedirs(db_dir, exist_ok=True)
+db_path = os.path.join(db_dir, "boardroomclub.db")
 SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{db_path}")
 
 if SQLALCHEMY_DATABASE_URL.startswith("sqlite"):
